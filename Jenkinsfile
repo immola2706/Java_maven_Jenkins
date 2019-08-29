@@ -5,7 +5,7 @@ pipeline {
 
         stage('SCM Checkout') {
             steps {
-                git url: 'https://github.com/immola2706/Java_maven_Jenkins.git'
+                git credentialsId: '2d148d77-32d5-4010-98bb-1b1ff3e6c97d', url: 'https://github.com/immola2706/Java_maven_Jenkins.git'
             }
         }
 
